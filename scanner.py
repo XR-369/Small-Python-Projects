@@ -28,7 +28,7 @@ def brute(base_url, wordlist):
         except requests.ConnectionError:
             print(f"Failed connection {url}")
 
-parser = argparse.ArgumentParser
+parser = argparse.ArgumentParser()
 parser.add_argument("base_url")
 args = parser.parse_args
 

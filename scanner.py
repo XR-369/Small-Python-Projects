@@ -20,7 +20,6 @@ def brute(base_url, wordlist):
 
             if response.status_code == 200:
                 print(f"found {url}")
-
             else:
                 print(f"Not found {url} {response.status_code}")
             
@@ -28,7 +27,6 @@ def brute(base_url, wordlist):
             print(f"Timeout with {url}")
         except requests.ConnectionError:
             print(f"Failed connection {url}")
-
 
 parser = argparse.ArgumentParser
 parser.add_argument("base_url")
